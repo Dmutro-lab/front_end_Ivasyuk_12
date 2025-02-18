@@ -1,0 +1,155 @@
+.blue-bg {
+    background-color: #79e2f5;
+}
+
+/* Стандартний колір для всіх посилань */
+a {
+    color: blue;
+}
+
+/* Посилання першого списку (жовтогарячий) */
+a.list1 {
+    color: #FFBB00;
+}
+
+/* Посилання другого списку (темно-червоний) */
+a.list2 {
+    color: #800000;
+}
+
+/* Окремий стиль для посилання "Приклад 10" (зелений) */
+#exam10 {
+    color: #56c500;
+}
+/* Фон всієї сторінки */
+body {
+    background-color: #f0f0f0; /* Світло-сірий фон */
+}
+
+/* Стиль для зеленого тексту */
+p.ex4 {
+    color: #00ff00; /* Зелений текст */
+}
+
+/* Правило для абзацу з фоном */
+p.ex5 {
+    color: #00ff00; /* зелений колір тексту */
+    background-color: #ff0000; /* червоний фон */
+  }
+  
+  /* Стилі для фону тіла сторінки */
+  body.body5 {
+    background: #ff0000 url("../images/ball.jpg") no-repeat fixed 5cm 5cm; /* фоновий колір та зображення */
+    font-family: "Arial", sans-serif; /* встановлення шрифта Arial */
+  }
+  p.ex6 {
+    font-family: Arial, Candara, Century-Gothic, sans-serif;
+}
+h1.ex7 {
+    font-family: Arial, Candara, Century-Gothic, sans-serif;
+    font-style: normal;
+}
+
+h2.ex7 {
+    font-family: Times New Roman, Georgia, serif;
+    font-style: italic;
+}
+
+p.ex7 {
+    font-family: Times New Roman, Georgia, serif;
+    font-style: oblique;
+}  
+p.ex8 {
+    font-family: Arial, Candara, Century-Gothic, sans-serif;
+    font-style: normal;
+    font-variant: small-caps;
+}
+p.ex9 {
+    font-family: Arial, Candara, Century-Gothic, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 600;
+}
+/* style.css */
+h1.ex10 {
+    font-family: Arial, Candara, Century-Gothic, sans-serif;
+    font-style: normal;
+    font-size: 30px;
+}
+
+h2.ex10 {
+    font-family: Times New Roman, Georgia, serif;
+    font-style: italic;
+    font-size: 100pt;
+}
+
+h3.ex10 {
+    font-family: Times New Roman, Georgia, serif;
+    font-style: italic;
+    font-size: 120%;
+}
+
+p.ex10 {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: Arial, sans-serif;
+    text-indent: 3pt;
+    text-align: justify;
+    text-decoration: line-through;
+    letter-spacing: 2em;
+    text-transform: none;
+}
+
+p.capitalize {
+    text-transform: capitalize;
+}
+
+p.uppercase {
+    text-transform: uppercase;
+}
+
+p.lowercase {
+    text-transform: lowercase;
+}
+/* 1️⃣ Видаляє всі відступи за замовчуванням у браузері */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 2️⃣ Прибирає підкреслення у всіх посиланнях всередині <li> */
+li a {
+    text-decoration: none;
+}
+
+/* 3️⃣ Змінює колір першого <p>, який йде одразу після <ul> */
+ul + p {
+    color: red;
+}
+
+/* 4️⃣ Додає пунктирну рамку тільки безпосереднім <ul> в #container */
+#container > ul {
+    border: 2px dashed blue;
+}
+
+/* 5️⃣ Робить всі <p>, які йдуть після <ul>, червоними */
+ul ~ p {
+    color: red;
+}
+
+/* 6️⃣ Додає іконку до всіх зовнішніх посилань */
+a[href^="http"] {
+    background: url('path/to/external/icon.png') no-repeat;
+    padding-left: 10px;
+}
+
+/* 7️⃣ Виділяє тільки вибрані <input type="radio"> */
+input[type="radio"]:checked {
+    border: 1px solid black;
+}
+
+/* 8️⃣ Додає нижню рамку до посилань при наведенні курсора */
+a:hover {
+    border-bottom: 1px solid black;
+}
